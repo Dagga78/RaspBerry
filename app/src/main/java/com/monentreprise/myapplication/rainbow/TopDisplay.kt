@@ -14,11 +14,12 @@ class TopDisplay {
         }
 
         alphanumericDisplay?.setBrightness(Ht16k33.HT16K33_BRIGHTNESS_MAX);
-        alphanumericDisplay?.display(message);
-        alphanumericDisplay?.setEnabled(true);
+        alphanumericDisplay?.display(message)
+        alphanumericDisplay?.setEnabled(true)
     }
 
     fun clean() {
         alphanumericDisplay?.close()
     }
+
 }

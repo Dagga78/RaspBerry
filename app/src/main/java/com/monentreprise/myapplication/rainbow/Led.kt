@@ -48,6 +48,12 @@ class Led {
         stripLED?.write(stripColor)
     }
 
+    fun launchHard(ID: ID = Led.ID.STRIP){
+        setbrihtness(1)
+        stripColor = intArrayOf(randomColor(), randomColor(), randomColor(), randomColor(), randomColor(), randomColor(), randomColor())
+        stripLED?.write(stripColors)
+    }
+
     fun setbrihtness(int: Int) {
         stripLED?.brightness = int
     }
